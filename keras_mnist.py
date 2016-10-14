@@ -20,7 +20,7 @@ from keras.utils import np_utils
 
 batch_size = 128
 num_epochs = 20
-hidden_size = 512
+hidden_size = 640
 
 
 num_train = 50000
@@ -83,6 +83,7 @@ print "Transformation confirmed!"
 inp = Input(shape = (height*width,))
 hidden_1 = Dense(hidden_size,activation = 'relu')(inp)
 hidden_2 = Dense(hidden_size,activation = 'relu')(hidden_1)
+hidden_3 = Dense(hidden_size,cativation = 'relu')(hidden_2)
 out = Dense(num_classes,activation = 'softmax')(hidden_2)
 
 
