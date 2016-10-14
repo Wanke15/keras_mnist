@@ -20,7 +20,7 @@ from keras.utils import np_utils
 
 batch_size = 128
 num_epochs = 20
-hidden_size = 640
+hidden_size = 512
 
 
 num_train = 50000
